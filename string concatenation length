@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class solution{
+public:
+    int lengthAfterConcat(int n, string arr[]) {
+      int totallength=0;
+      for (int i=0; i<n; i++){
+          totallength=0;
+          for (int i=0; i<n; i++){
+              totallength+=arr[i].length();
+          }
+          return totallength;
+      }
+        
+    }
+};
