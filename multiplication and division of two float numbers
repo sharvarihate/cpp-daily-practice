@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+vector<string> computeResults(float num1, float num2) {
+    vector<string> result;
+
+    ostringstream out1;
+    out1 << fixed << setprecision(2) << num1 * num2;
+    result.push_back(out1.str());
+
+    if (num2 != 0) {
+        ostringstream out2;
+        out2 << fixed << setprecision(2) << num1 / num2;
+        result.push_back(out2.str());
+    } else {
+        result.push_back("Undefined");
+    }
+
+    return result;
+}
+
+int main() {
+    float num1, num2;
+    cin >> num1 >> num2;
+
+    vector<string> result = computeResults(num1, num2);
+
+    for (string value : result) {
+        cout << value << "\n";
+    }
+
+    return 0;
+}
