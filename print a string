@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void printstring(const string&)
+
+int main(){
+    string input_string;
+    getine (cin , input _string);
+    printstring(input_string);
+    return 0;
+    
+}
