@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class solution{
+public:
+    void table(int n) {
+        for (int i=1; i<=10; i++){
+            int result= n * i;
+            cout << n << " x " << i << " = "<< result;
+            if (i != 10) {
+                cout << "\n";
+            }
+        }
+    }
+};
