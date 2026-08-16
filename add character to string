@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+     char c;
+     string s;
+     cin>>c>>s;
+     string result=c+s+c;
+     cout<<result<<endl;
+     
+
+    return 0;
+}
